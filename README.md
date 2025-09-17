@@ -14,27 +14,27 @@ Evaluate the model's performance using accuracy and loss metrics
 Visualize the model's performance using plots
 
 # How i built it ?
-Data Loading: I loaded the CIFAR-10 dataset using
+1.Data Loading: I loaded the CIFAR-10 dataset using
 
     tf.keras.datasets.cifar10.load_data().
-Data Preprocessing: I normalized the pixel values of the images to be between 0 and 1.
+2.Data Preprocessing: I normalized the pixel values of the images to be between 0 and 1.
 
-Model Architecture: I defined a CNN model using
+3.Model Architecture: I defined a CNN model using
 
     tf.keras.Sequential
 with Conv2D, MaxPooling2D, Flatten, and Dense layers.
 
-Model Compilation: I compiled the model with the Adam optimizer and sparse categorical cross-entropy loss function.
+4.Model Compilation: I compiled the model with the Adam optimizer and sparse categorical cross-entropy loss function.
 
-Data Augmentation: I applied data augmentation using
+5.Data Augmentation: I applied data augmentation using
 
     tf.keras.preprocessing.image.ImageDataGenerator
 to improve the model's performance.
 
-Model Training: I trained the model using
+6.Model Training: I trained the model using
 
-model.fit()
+    model.fit()
 with data augmentation and validation.
 
-Model Evaluation: I evaluated the model's performance using accuracy and loss metrics and plotted the results.
+7.Model Evaluation: I evaluated the model's performance using accuracy and loss metrics and plotted the results.
 
